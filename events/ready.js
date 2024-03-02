@@ -6,6 +6,6 @@ module.exports = {
     name: Events.ClientReady,
     once: true,
     execute(client) {
-        console.log(`${readyClient} Is online!`);
+        console.log(`${client.user.username} Is online!`);
     },
 };
